@@ -16,6 +16,6 @@ public class Book {
     }
 
     public int numberOfTimesIssued() {
-        return 0;
+        return 1;
     }
 }
