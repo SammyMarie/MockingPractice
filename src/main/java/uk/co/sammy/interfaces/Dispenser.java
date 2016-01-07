@@ -1,6 +1,6 @@
 package uk.co.sammy.interfaces;
 
-import uk.co.sammy.classes.DispenserFailedException;
+import uk.co.sammy.practice.DispenserFailedException;
 
 import java.math.BigDecimal;
 

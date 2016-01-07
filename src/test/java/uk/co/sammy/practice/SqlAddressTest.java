@@ -6,9 +6,6 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.mockito.internal.verification.Times;
 import uk.co.sammy.interfaces.Dispenser;
-import uk.co.sammy.practice.Account;
-import uk.co.sammy.practice.DispenserFailedException;
-import uk.co.sammy.practice.TransactionManager;
 
 import java.math.BigDecimal;
 
@@ -38,7 +35,7 @@ public class SqlAddressTest {
         doThrow(new DispenserFailedException()).when(failingDispenser).dispense(isA(BigDecimal.class));
         txMangr.withdraw(500);
 
-        assertThat(2000.00).isEqualTo(myAccount.getRemainingBalance());
         verify(failingDispenser, new Times(1)).dispense(isA(BigDecimal.class));
+        assertThat(2000.00).isEqualTo(myAccount.getRemainingBalance());
     }
 }
