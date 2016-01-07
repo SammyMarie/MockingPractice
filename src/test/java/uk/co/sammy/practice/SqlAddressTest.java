@@ -8,11 +8,9 @@ import org.mockito.internal.verification.Times;
 import uk.co.sammy.interfaces.Dispenser;
 
 import java.math.BigDecimal;
-
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Matchers.isA;
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by smlif on 06/01/2016.
@@ -35,7 +33,7 @@ public class SqlAddressTest {
         doThrow(new DispenserFailedException()).when(failingDispenser).dispense(isA(BigDecimal.class));
         txMangr.withdraw(500);
 
-        verify(failingDispenser, new Times(1)).dispense(isA(BigDecimal.class));
         assertThat(2000.00).isEqualTo(myAccount.getRemainingBalance());
+        verify(failingDispenser, new Times(1)).dispense(isA(BigDecimal.class));
     }
 }
