@@ -1,6 +1,10 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
 
 import org.junit.Test;
+import uk.co.sammy.practice.Account;
+import uk.co.sammy.practice.AlwaysFailingDispenserStub;
+import uk.co.sammy.practice.TransactionManager;
+import uk.co.sammy.practice.WithdrawalResponse;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

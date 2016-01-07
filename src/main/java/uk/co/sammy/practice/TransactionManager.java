@@ -1,4 +1,6 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
+
+import uk.co.sammy.interfaces.Dispenser;
 
 /**
  * Created by smlif on 05/01/2016.
@@ -8,7 +10,7 @@ public class TransactionManager {
         return new TransactionManager();
     }
 
-    public void registerMoneyDispenser(AlwaysFailingDispenserStub alwaysFailingDispenserStub) {
+    public void registerMoneyDispenser(Dispenser alwaysFailingDispenserStub) {
        new AlwaysFailingDispenserStub();
     }
 

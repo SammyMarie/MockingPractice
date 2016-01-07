@@ -1,4 +1,4 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
 
 /**
  * Created by smlif on 05/01/2016.
@@ -13,6 +13,10 @@ public class Account {
     }
 
     public double remainingAmount() {
+        return 2000.00;
+    }
+
+    public double getRemainingBalance() {
         return 2000.00;
     }
 }

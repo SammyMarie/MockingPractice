@@ -1,4 +1,4 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
 
 import uk.co.sammy.interfaces.ErrorType;
 
@@ -8,5 +8,9 @@ import uk.co.sammy.interfaces.ErrorType;
 public class DispenserFailedException extends Exception {
     public DispenserFailedException(ErrorType errorType, String message){
         super(message);
+    }
+
+    public DispenserFailedException() {
+
     }
 }

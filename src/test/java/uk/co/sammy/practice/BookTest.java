@@ -1,7 +1,9 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
 
 import org.junit.Test;
 import uk.co.sammy.dummy.DummyMember;
+import uk.co.sammy.practice.Book;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 

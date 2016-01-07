@@ -1,4 +1,4 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
 
 import uk.co.sammy.interfaces.Dispenser;
 import uk.co.sammy.interfaces.ErrorType;

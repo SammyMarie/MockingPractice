@@ -1,4 +1,4 @@
-package uk.co.sammy.classes;
+package uk.co.sammy.practice;
 
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 
