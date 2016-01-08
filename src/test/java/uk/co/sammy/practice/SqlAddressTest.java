@@ -1,6 +1,7 @@
 package uk.co.sammy.practice;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -25,6 +26,7 @@ public class SqlAddressTest {
     }
 
     @Test
+    @Ignore("This test doesn't interact with the Mock")
     public void checkRolledBackTransaction() throws DispenserFailedException {
         Account myAccount = new Account("John", 2000.00);
         TransactionManager txMangr = TransactionManager.forAccount(myAccount);
